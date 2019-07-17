@@ -19,11 +19,11 @@ class PolicyGradient(nn.Module):
     def forward(self, state):
 
         # ----------
-        # Solution to Exercise 6.4
+        # Solution to Exercise 6.5
 
-        raise Exception("Complete exercise 6.4")
+        raise Exception("Complete exercise 6.5")
 
-        # End of solution to Exercise 6.4
+        # End of solution to Exercise 6.5
         # ----------
 
 

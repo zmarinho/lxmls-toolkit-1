@@ -54,14 +54,18 @@ def train():
         for j, (state, action) in enumerate(state_action_list):
 
             # ----------
-            # Solution to Exercise 6.3
+            # Solution to Exercise 6.4
 
-            raise NotImplementedError("Exercise 6.3")
+            raise NotImplementedError("Exercise 6.4")
 
         # code needed at this identation level!
 
-        # End of solution to Exercise 6.3
+        # End of solution to Exercise 6.4
         # ----------
+        grads = torch.cat(grad_list, 0).mean()
+	grads.backward()
+	optim.step()
+	optim.zero_grad()
 
         value = (gt(rewardlist, 1))
         valuelist.append(value)
